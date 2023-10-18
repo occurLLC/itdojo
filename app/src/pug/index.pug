@@ -1,0 +1,472 @@
+- var url          = '';
+- var local_url    = 'http://192.168.11.3:3000/';
+- var site_name    = '';
+- var og_locale    = 'jp_JP';
+- var og_type      = 'company';
+- var twitter_card = 'summary_large_image';
+- var twitter_site = '@';
+- var title        = '';
+- var description  = '';
+- var og_img       = 'img/ogp.png';
+- var favicon      = 'favicon.ico';
+- var path         = '.'
+
+doctype html
+html(lang="ja")
+  head
+    include ./include/_head
+
+  body
+    include ./include/_header
+    main 
+      .FV.pc-only
+        .FV-human
+          img(src=path+"/img/page/fv-human.png", alt="")
+        .FV-brown
+          img(src=path+"/img/page/fv-bg.png", alt="")
+          .FV-stones
+            img(src=path+"/img/page/cta_container.png", alt="")
+            .btn-line.FV-adj-btn
+              .btn-line-img
+                img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
+              span.btn-line-txt LINEで無料相談
+          .FV-main 
+            img(src=path+"/img/page/fv-main.png", alt="開発エンジニアへの最短ルートならIT道場")
+          
+      .FV-sp.sp-only
+        .FV-human-sp
+          img(src=path+"/img/page/fv-human_sp.png", alt="")
+        .FV-brown-sp
+          img(src=path+"/img/page/fv-bg_sp.png", alt="")
+          .FV-stones-sp
+            img(src=path+"/img/page/cta_container_sp.png", alt="")
+            .btn-line.FV-adj-btn
+              .btn-line-img
+                img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
+              span.btn-line-txt LINEで無料相談
+          .FV-main-sp
+            img(src=path+"/img/page/fv-main.png", alt="開発エンジニアへの最短ルートならIT道場")
+      section.message 
+        .section-wrapper
+          .message-content
+            span.message-ttl-large Message
+            .message-content-wrapper
+              .message-content-txt
+                h2.ttl-middle 
+                  | 開発エンジニアを目指す全ての人に<br>
+                  span.ttl-middle-yellow チャンス
+                  | と
+                  span.ttl-middle-yellow 活躍の場
+                  | を提供したい
+                .message-content-img.sp-only
+                  img(src=path+"/img/page/message_img.png", alt="")
+                p 開発エンジニアになりたいけどチャレンジする資金がない。<br>今の仕事を辞めて、新しいことをはじめて大丈夫だろうか。<br>勉強しても仕事はあるのか。
+                p 新しいことへのチャレンジは不安がつきものです。
+                p 私たちは沢山の先輩達に育てられ、そして助け合ってきました。<br>その恩を忘れず、新たに同じ道を目指す方々へと還元したい。
+                p そしてそれは業界の発展とつながり、<br>地域社会へと還元されていくと信じています。
+              .message-content-img.pc-only
+                img(src=path+"/img/page/message_img.png", alt="")
+              
+      section.worries 
+        .section-wrapper 
+          .section-ttl 
+            span.section-ttl-large.section-ttl-large__light-brown Worries
+            h2.section-ttl-middle 
+              | こんな
+              span.ttl-middle-red お悩み・不安
+              | ありませんか？
+          .worries-content 
+            .worries-content-item 
+              .worries-content-item-img 
+                img(src=path+"/img/page/worries_img_01.png", alt="")
+              p.worries-content-item-txt エンジニアとして<br>働くスキルが<br>身につくのか不安
+            .worries-content-item 
+              .worries-content-item-img 
+                img(src=path+"/img/page/worries_img_02.png", alt="")
+              p.worries-content-item-txt 学習を継続<br class="sp-only">できるか不安
+            .worries-content-item 
+              .worries-content-item-img 
+                img(src=path+"/img/page/worries_img_03.png", alt="")
+              p.worries-content-item-txt 高額な受講料は<br class="sp-only">払えない
+      section.strengths
+        .section-wrapper 
+          .section-ttl 
+            span.section-ttl-large.section-ttl-large__dark-brown Strengths
+            h2.section-ttl-middle.section-ttl-middle__white IT道場の強み
+          .strengths-content 
+            .strengths-content-item
+              .strengths-content-item-img
+                img(src=path+"/img/page/strengths_img_01.png", alt="")
+              .strengths-content-item-txt
+                h3.strengths-content-item-txt-head
+                  span.txt-yellow 技術力、現場力
+                  | を身につける<br>実践的なカリキュラム
+                p.strengths-content-item-txt-text ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            .strengths-content-item.strengths-content-item--column-reverse
+              .strengths-content-item-img
+                img(src=path+"/img/page/strengths_img_02.png", alt="")
+              .strengths-content-item-txt
+                h3.strengths-content-item-txt-head
+                  span.txt-yellow 東証スタンダード上場
+                  | の<br>IT系企業の
+                  span.txt-yellow 充実したサポート体制
+                p.strengths-content-item-txt-text ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            .strengths-content-item
+              .strengths-content-item-img
+                img(src=path+"/img/page/strengths_img_03.png", alt="")
+              .strengths-content-item-txt
+                h3.strengths-content-item-txt-head
+                  span.txt-yellow 後払いもできる！
+                  | <br>負担が少ない受講料
+                p.strengths-content-item-txt-text ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+      section.cta
+        .section-wrapper.cta-wrapper
+          .cta-area 
+            .cta-content
+              .cta-content-top 
+                img(src=path+"/img/page/cta_heading.png", alt="エンジニアへの最短ルート 無料相談 簡単3ステップ")
+              .cta-content-items 
+                .cta-content-item
+                  img(src=path+"/img/page/cta_01.png", alt="STEP1 ボタンをタップ 画面下の予約ボタンをタップ")
+                .cta-content-item
+                  img(src=path+"/img/page/cta_02.png", alt="STEP2 ボタンをタップ 画面下の予約ボタンをタップ")
+                .cta-content-item
+                  img(src=path+"/img/page/cta_03.png", alt="STEP3 ボタンをタップ 画面下の予約ボタンをタップ")
+            .btn-line.FV-adj-btn
+              .btn-line-img
+                img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
+              span.btn-line-txt LINEで無料相談
+      section.voice
+        .section-wrapper 
+          .section-ttl 
+            span.section-ttl-large.section-ttl-large__light-brown Voice
+            h2.section-ttl-middle 
+              | 受講生の
+              span.ttl-middle-red 口コミ
+        .voice-content
+          .swiper 
+            .swiper-wrapper 
+              .swiper-slide 
+                .voice-item
+                  span.voice-item-name 20代女性Bさん
+                  .voice-item-img 
+                    img(src=path+"/img/page/strengths_img_01.png", alt="")
+                  h3.voice-item-head 
+                    | ここが見出し
+                    span.txt-red 15文字程度
+                  p.voice-item-txt ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。
+              .swiper-slide 
+                .voice-item
+                  span.voice-item-name 20代女性Aさん
+                  .voice-item-img 
+                    img(src=path+"/img/page/strengths_img_01.png", alt="")
+                  h3.voice-item-head 
+                    | ここが見出し
+                    span.txt-red 15文字程度
+                  p.voice-item-txt ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。
+              .swiper-slide 
+                .voice-item
+                  span.voice-item-name 20代女性Aさん
+                  .voice-item-img 
+                    img(src=path+"/img/page/strengths_img_01.png", alt="")
+                  h3.voice-item-head 
+                    | ここが見出し
+                    span.txt-red 15文字程度
+                  p.voice-item-txt ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。
+              .swiper-slide 
+                .voice-item
+                  span.voice-item-name 20代女性Aさん
+                  .voice-item-img 
+                    img(src=path+"/img/page/strengths_img_01.png", alt="")
+                  h3.voice-item-head 
+                    | ここが見出し
+                    span.txt-red 15文字程度
+                  p.voice-item-txt ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。
+              .swiper-slide 
+                .voice-item
+                  span.voice-item-name 20代女性Aさん
+                  .voice-item-img 
+                    img(src=path+"/img/page/strengths_img_01.png", alt="")
+                  h3.voice-item-head 
+                    | ここが見出し
+                    span.txt-red 15文字程度
+                  p.voice-item-txt ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。
+              .swiper-slide 
+                .voice-item
+                  span.voice-item-name 20代女性Aさん
+                  .voice-item-img 
+                    img(src=path+"/img/page/strengths_img_01.png", alt="")
+                  h3.voice-item-head 
+                    | ここが見出し
+                    span.txt-red 15文字程度
+                  p.voice-item-txt ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。
+          .swiper-btn 
+            .swiper-button-next
+            .swiper-button-prev
+
+      section.cta 
+        .section-wrapper.cta-wrapper
+          .cta-area 
+            .cta-content
+              .cta-content-top 
+                img(src=path+"/img/page/cta_heading.png", alt="エンジニアへの最短ルート 無料相談 簡単3ステップ")
+              .cta-content-items 
+                .cta-content-item
+                  img(src=path+"/img/page/cta_01.png", alt="STEP1 ボタンをタップ 画面下の予約ボタンをタップ")
+                .cta-content-item
+                  img(src=path+"/img/page/cta_02.png", alt="STEP2 ボタンをタップ 画面下の予約ボタンをタップ")
+                .cta-content-item
+                  img(src=path+"/img/page/cta_03.png", alt="STEP3 ボタンをタップ 画面下の予約ボタンをタップ")
+            .btn-line.FV-adj-btn
+              .btn-line-img
+                img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
+              span.btn-line-txt LINEで無料相談
+      section.course
+        .section-wrapper 
+          .section-ttl 
+            span.section-ttl-large.section-ttl-large__dark-brown Course
+            h2.section-ttl-middle.section-ttl-middle__white IT道場コース概要
+          .course-area 
+            .course-area-table
+              table 
+                tr 
+                  td
+                  th(colspan="2") 開発エンジニア育成講座<br>通常コース
+                  th(colspan="2") 開発エンジニア育成講座<br>転職支援事業コース
+                tr 
+                  td.adj-tbl-center.adj-tbl-vertical-center.td-brown 受講料
+                  td.td-white.adj-tbl-center 一括・分割<br>360,000円（税込）
+                  td.td-white.adj-tbl-center ISA払い<br>420,000円（税込））
+                  td.td-white.adj-tbl-center 一括・分割<br>360,000円（税込）
+                  td.td-white.adj-tbl-center ISA払い<br>420,000円（税込））
+                tr 
+                  td.adj-tbl-center.adj-tbl-vertical-center.td-brown 定員数
+                  td(colspan="4").td-white.adj-tbl-center 1ヵ月に入校10名
+                tr 
+                  td.adj-tbl-center.adj-tbl-vertical-center.td-brown 学習期間と時間
+                  td(colspan="4").td-white.adj-tbl-center 6ヶ月（600時間）
+                tr 
+                  td.adj-tbl-center.adj-tbl-vertical-center.td-brown 教室開放時間
+                  td(colspan="4").td-white.adj-tbl-center 平日 9:00～22：00／土曜 9:00～18：00／日曜・祝日なし
+                tr 
+                  td.adj-tbl-center.adj-tbl-vertical-center.td-brown 制度
+                  td(colspan="4").td-white.adj-tbl-center ISA制度／早期学習切り上げ制度／就職保証制度
+                tr 
+                  td.adj-tbl-center.adj-tbl-vertical-center.td-brown 経済産業省支援事業 補助
+                  td(colspan="2").td-white.adj-tbl-vertical-center なし
+                  td(colspan="2").td-white.adj-tbl-vertical-center 
+                    p.tbl-txt 受講修了した場合受講<br>（税別）の 
+                      span.txt-red 50%を補助
+                    p.tbl-txt 受講を経て転職し、その後1年間継続的に<br>転職先に就業していることを確認できた場合<br>受講料（税別）の20%を追加補助
+                tr 
+                  td.adj-tbl-center.adj-tbl-vertical-center.td-brown 入校条件
+                  td(colspan="2").td-white.adj-tbl-vertical-center 
+                    ul.tbl-list 
+                      li.tbl-list-item 1ヶ月に100時間の学習時間を確保できる方
+                      li.tbl-list-item 15～45歳の方
+                      li.tbl-list-item エスワイシステムの特別研修に参加できる方
+                  td(colspan="2").td-white.adj-tbl-vertical-center 
+                    ul.tbl-list 
+                      li.tbl-list-item 1ヶ月に100時間の学習時間を確保できる方
+                      li.tbl-list-item 15～45歳の方
+                      li.tbl-list-item エスワイシステムの特別研修に参加できる方
+                    p.tbl-txt.mt-16
+                      b 支援事業に関する条件
+                    ul.tbl-list 
+                      li.tbl-list-item 入校時に企業等と雇用契約を締結しているか方
+                      li.tbl-list-item 2024年10月1日までに入校した方
+                      li.tbl-list-item 第三者（経済産業省）に情報提供をしてもいい方
+      section.plan
+        .plan-wrapper 
+          .section-ttl 
+            span.section-ttl-large.section-ttl-large__brown Plan
+            h2.section-ttl-middle 
+              | 3つの
+              span.ttl-middle-red 受講費用
+              | 制度と
+              span.ttl-middle-red 給付金
+              | 制度
+          .plan-content
+            .plan-content-above
+              .plan-content-01
+                .plan-content-container
+                  span.plan-content-num.__bg-blue 01
+                  h3.plan-content-ttl-03
+                    span.plan-content-ttl-03.__txt-blue ISA制度
+                    span.plan-content-ttl-03-middle （出世払い制度）
+                  span.plan-content-label.__bg-blue 特徴
+                  h4.plan-content-ttl-04.__txt-blue 就職するまでお支払い不要
+                  p.plan-content-txt 勉強する意欲はあっても、初期費用の準備が難しい。そんな方への支援としてIT道場では「ISA制度」という、就職後に受講料をお支払いいただく出世払いの支払方法を準備しております。
+                  h4.plan-content-ttl-04 制度利用例
+                  .plan-content-ex 
+                    .plan-content-ex-noISA
+                      span.plan-content-label.__bg-black 入校時の授業料
+                      p.plan-content-ex-large 360,000円
+                        span.plan-content-ex-middle （税込）
+                      p.plan-content-ex-small ※一括払いまたは分割払いを選択いただけます。
+                    .plan-content-ex-withISA 
+                      h5.plan-content-ex-withISA-ttl.plan-content-ex-withISA-ttl__arrow.__txt-blue ISA制度を利用した場合
+                      .plan-content-ex-withISA-container.plan-content-ex-withISA-container__blue
+                        span.plan-content-label.__bg-black 入校時の授業料
+                        p.plan-content-ex-large.__txt-blue 0円
+                          span.plan-content-ex-middle （税込）
+                        span.plan-content-label.__bg-black.mt-16 就職時の授業料
+                        p.plan-content-ex-large 420,000円
+                          span.plan-content-ex-middle （税込）
+                        p.plan-content-txt IT道場を卒業、就職先が決定までの授業料のお支払い義務は致しません。
+              .plan-content-02
+                .plan-content-container
+                  span.plan-content-num.__bg-orange 02
+                  h3.plan-content-ttl-03
+                    span.plan-content-ttl-03.__txt-orange ISA制度
+                    span.plan-content-ttl-03-middle （出世払い制度）
+                  span.plan-content-label.__bg-orange 特徴
+                  h4.plan-content-ttl-04.__txt-orange 就職するまでお支払い不要
+                  p.plan-content-txt 勉強する意欲はあっても、初期費用の準備が難しい。そんな方への支援としてIT道場では「ISA制度」という、就職後に受講料をお支払いいただく出世払いの支払方法を準備しております。
+                  h4.plan-content-ttl-04 制度利用例
+                  .plan-content-ex 
+                    .plan-content-ex-noISA
+                      span.plan-content-label.__bg-black 入校時の授業料
+                      p.plan-content-ex-large 360,000円
+                        span.plan-content-ex-middle （税込）
+                      p.plan-content-ex-small ※一括払いまたは分割払いを選択いただけます。
+                    .plan-content-ex-withISA
+                      h5.plan-content-ex-withISA-ttl.__txt-orange 入校4ヵ月目で
+                      h5.plan-content-ex-withISA-ttl.plan-content-ex-withISA-ttl__arrow.__txt-orange カリキュラム完了＆就職内定
+                      .plan-content-ex-withISA-container.plan-content-ex-withISA-container__orange
+                        span.plan-content-label.__bg-black 入校時の授業料
+                        p.plan-content-ex-large.__txt-orange 0円
+                          span.plan-content-ex-middle （税込）
+                        span.plan-content-label.__bg-black.mt-16 就職時の授業料
+                        p.plan-content-ex-large 420,000円
+                          span.plan-content-ex-middle （税込）
+                        p.plan-content-txt IT道場を卒業、就職先が決定までの授業料のお支払い義務は致しません。
+            .plan-content-under
+              .plan-content-03
+                .plan-content-container
+                  span.plan-content-num.__bg-green 03
+                  h3.plan-content-ttl-03
+                    span.plan-content-ttl-03.__txt-green ISA制度
+                    span.plan-content-ttl-03-middle （出世払い制度）
+                  span.plan-content-label.__bg-green 特徴
+                  h4.plan-content-ttl-04.__txt-green 就職するまでお支払い不要
+                  p.plan-content-txt 勉強する意欲はあっても、初期費用の準備が難しい。そんな方への支援としてIT道場では「ISA制度」という、就職後に受講料をお支払いいただく出世払いの支払方法を準備しております。
+                  h4.plan-content-ttl-04 制度利用例
+                  .plan-content-ex 
+                    .plan-content-ex-noISA
+                      span.plan-content-label.__bg-black 入校時の授業料
+                      p.plan-content-ex-large 360,000円
+                        span.plan-content-ex-middle （税込）
+                      p.plan-content-ex-small ※一括払いまたは分割払いを選択いただけます。
+      section.cta
+        .section-wrapper.cta-wrapper
+          .cta-area
+            .cta-content
+              .cta-content-top 
+                img(src=path+"/img/page/cta_heading.png", alt="エンジニアへの最短ルート 無料相談 簡単3ステップ")
+              .cta-content-items 
+                .cta-content-item
+                  img(src=path+"/img/page/cta_01.png", alt="STEP1 ボタンをタップ 画面下の予約ボタンをタップ")
+                .cta-content-item
+                  img(src=path+"/img/page/cta_02.png", alt="STEP2 ボタンをタップ 画面下の予約ボタンをタップ")
+                .cta-content-item
+                  img(src=path+"/img/page/cta_03.png", alt="STEP3 ボタンをタップ 画面下の予約ボタンをタップ")
+            .btn-line.FV-adj-btn
+              .btn-line-img
+                img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
+              span.btn-line-txt LINEで無料相談
+      section.works
+        .section-wrapper 
+          .section-ttl 
+            span.section-ttl-large.section-ttl-large__dark-brown Works
+            h2.section-ttl-middle.section-ttl-middle__white 主な就職先
+      section.faq
+        .section-wrapper 
+          .section-ttl 
+            span.section-ttl-large.section-ttl-large__brown FAQ
+            h2.section-ttl-middle 
+              | よくある質問
+          .faq-content
+            .faq-item
+              dl 
+                input(type="checkbox" id="faq-01")
+                label(for="faq-01") 
+                  dt 
+                    span Q
+                    p.faq-item-txt ISAとはどういった契約ですか？
+                  dd 
+                    span.txt-red A 
+                    p.faq-item-txt ISA (Income Share Agreement) は、アメリカのプログラミングスクールから始まった新しい契約モデルで、就職後に発生する給与の一部を、一定期間にわたって支払うモデルです。<br>受講料の支払いは、就職に成功し、ISAポリシーを満たした後から始まります。スクールが本気で皆さんの人生に寄り添って考えることにより、望ましいキャリアになることを目指します。<br> 万が一、就職できなかった場合や、ISAポリシーに満たしていない期間は、お支払いの必要がありません。そのため、スクールと生徒との間で、成功とリスクがそれぞれ共有されているフェアな契約です。
+            .faq-item
+              dl 
+                input(type="checkbox" id="faq-02")
+                label(for="faq-02") 
+                  dt 
+                    span Q
+                    p.faq-item-txt ISAと一般（一括・分割払い）で<br class="sp-only">支払い方法を悩んでいます…。
+                  dd 
+                    span.txt-red A 
+                    p.faq-item-txt ISAと一般において、選考基準の違いはございません。<br>ISAか一般で現在悩んでいる方は、ISAでご入校お申し込みください。
+            .faq-item
+              dl 
+                input(type="checkbox" id="faq-03")
+                label(for="faq-03") 
+                  dt 
+                    span Q
+                    p.faq-item-txt 外国籍ですが入塾できますか？
+                  dd 
+                    span.txt-red A 
+                    p.faq-item-txt 本スクールは日本国内の企業への転職・就業を前提としたプログラムのため、日本国内における、有効な就労ビザ等をご自身で取得している方は受講が可能です。<br> 本スクールは、学校法人ではないため、学生ビザ等のビザサポートには対応しておりません。<br>また、現在のサポート言語は日本語のみとなっており、日本語でのスムーズなコミュニケーションを行える必要があります。国籍における差別は一切なく、あらゆる人を受け入れられるように、スクールの拡充を目指します。<br>※就職サポートは国内（東京、名古屋、大阪）就職に限ります。
+            .faq-item
+              dl 
+                input(type="checkbox" id="faq-04")
+                label(for="faq-04") 
+                  dt 
+                    span Q
+                    p.faq-item-txt 全てマンツーマンでの対応でしょうか？
+                  dd 
+                    span.txt-red A 
+                    p.faq-item-txt マンツーマンでの対応は週に2回30分で行う対面のレビュー（作業成果物確認）となります。
+            .faq-item
+              dl 
+                input(type="checkbox" id="faq-05")
+                label(for="faq-05") 
+                  dt 
+                    span Q
+                    p.faq-item-txt IT道場でデザインの勉強はできますか？
+                  dd 
+                    span.txt-red A 
+                    p.faq-item-txt デザインよりは処理部分の内容を主に学習します。<br>将来IT業界に就職を希望されている場合は、デザインに限らず処理部分を学習することで、就職できる確率が大幅に高くなります。
+            .faq-item
+              dl 
+                input(type="checkbox" id="faq-06")
+                label(for="faq-06") 
+                  dt 
+                    span Q
+                    p.faq-item-txt フルオンラインで参加できますか？<br>関東県外在住ですが、参加できますか？
+                  dd 
+                    span.txt-red A 
+                    p.faq-item-txt 可能です。一部の書類や機材については郵送にてお送りさせていただきます。<br>また、寮（別途料金）もご用意しておりますので、遠方からのご参加も可能です。<br>ただし、日本国内に限ります。ご希望の方は、ご相談ください。
+            .faq-item
+              dl 
+                input(type="checkbox" id="faq-07")
+                label(for="faq-07") 
+                  dt 
+                    span Q
+                    p.faq-item-txt 勉強時間がどのくらい確保<br class="sp-only">できれば、参加できますか？
+                  dd 
+                    span.txt-red A 
+                    p.faq-item-txt  カリキュラムは1か月あたり100時間の学習を想定しており、1週間25時間の勉強時間が必要となります。<br> 習熟が早い場合もあると思いますので、ご自身で調整いただきながら、 ご参加いただくことは可能です。 
+            .faq-item
+              dl 
+                input(type="checkbox" id="faq-08")
+                label(for="faq-08") 
+                  dt 
+                    span Q
+                    p.faq-item-txt 家にPCがないのですが、大丈夫でしょうか？
+                  dd 
+                    span.txt-red A 
+                    p.faq-item-txt ノートPCをお貸しいたしますので問題ございません。<br>ただし、ネット環境のご準備は、ご自身でご用意くださいますようお願いします。
+
+    include ./include/_footer
+    include ./include/_script
