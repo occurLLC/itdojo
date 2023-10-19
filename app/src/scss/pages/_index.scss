@@ -444,6 +444,7 @@
     }
 
     &-item {
+        height: 100%;
         border: solid 3px #231808;
         border-radius: 15px;
         padding: 20px 15px;
@@ -475,9 +476,12 @@
 
 .swiper {
     width: 100%;
-    height: auto;
     max-width: 1440px !important;
     overflow: visible !important;
+
+    &-slide {
+        height: auto !important;
+    }
 
     &-btn {
         position: absolute;
