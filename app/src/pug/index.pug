@@ -17,6 +17,9 @@ html(lang="ja")
     include ./include/_head
 
   body
+    //- Google Tag Manager (noscript)
+    noscript 
+      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-P5TTH7XG", height="0" width="0" style="display:none;visibility:hidden") 
     include ./include/_header
     main 
       .FV.pc-only
@@ -352,7 +355,7 @@ html(lang="ja")
                     span.plan-content-ttl-03-middle （出世払い制度）
                   span.plan-content-label.__bg-blue 特徴
                   h4.plan-content-ttl-04.__txt-blue 就職するまでお支払い不要
-                  p.plan-content-txt 勉強する意欲はあっても、初期費用の準備が難しい。そんな方への支援としてIT道場では「ISA制度」という、就職後に受講料をお支払いいただく出世払いの支払方法を準備しております。
+                  p.plan-content-txt 勉強する意欲はあっても、初期費用の準備が難しい。そんな方への支援としてIT道場では「ISA制度」という、就職後に受講料をお支払いいただく出世払いの支払方法を準備しております。<br>ISA制度では就職するまで受講料のお支払いが不要な支払い方法を選択して、入稿いただくこともできます。
                   h4.plan-content-ttl-04 制度利用例
                   .plan-content-ex 
                     .plan-content-ex-noISA
@@ -374,11 +377,10 @@ html(lang="ja")
                 .plan-content-container
                   span.plan-content-num.__bg-orange 02
                   h3.plan-content-ttl-03
-                    span.plan-content-ttl-03.__txt-orange ISA制度
-                    span.plan-content-ttl-03-middle （出世払い制度）
+                    span.plan-content-ttl-03.__txt-orange 早期学習切り上げ制度
                   span.plan-content-label.__bg-orange 特徴
-                  h4.plan-content-ttl-04.__txt-orange 就職するまでお支払い不要
-                  p.plan-content-txt 勉強する意欲はあっても、初期費用の準備が難しい。そんな方への支援としてIT道場では「ISA制度」という、就職後に受講料をお支払いいただく出世払いの支払方法を準備しております。
+                  h4.plan-content-ttl-04.__txt-orange 早めに内定がでれば残り期間の費用は不要
+                  p.plan-content-txt IT道場の開発エンジニア育成講座は本来6ヶ月600時間のカリキュラムとなりますが、<br>早期習得し、企業からの内定が出た場合は、残期間の学習を免除することができます。
                   h4.plan-content-ttl-04 制度利用例
                   .plan-content-ex 
                     .plan-content-ex-noISA
@@ -390,30 +392,24 @@ html(lang="ja")
                       h5.plan-content-ex-withISA-ttl.__txt-orange 入校4ヵ月目で
                       h5.plan-content-ex-withISA-ttl.plan-content-ex-withISA-ttl__arrow.__txt-orange カリキュラム完了＆就職内定
                       .plan-content-ex-withISA-container.plan-content-ex-withISA-container__orange
-                        span.plan-content-label.__bg-black 入校時の授業料
-                        p.plan-content-ex-large.__txt-orange 0円
-                          span.plan-content-ex-middle （税込）
+                        span.plan-content-label.__bg-black 残期間の学費を返却
+                        p.plan-content-ex-large.font18 2ヶ月分12万円を返却
                         span.plan-content-label.__bg-black.mt-16 就職時の授業料
-                        p.plan-content-ex-large 420,000円
+                        p.plan-content-ex-large.strikethrough 360,000円
                           span.plan-content-ex-middle （税込）
-                        p.plan-content-txt IT道場を卒業、就職先が決定までの授業料のお支払い義務は致しません。
+                        p.plan-content-ex-large.__txt-orange.topTriangle 240,000円
+                          span.plan-content-ex-middle （税込）
             .plan-content-under
               .plan-content-03
                 .plan-content-container
                   span.plan-content-num.__bg-green 03
                   h3.plan-content-ttl-03
-                    span.plan-content-ttl-03.__txt-green ISA制度
+                    span.plan-content-ttl-03.__txt-green 就職保証制度
                     span.plan-content-ttl-03-middle （出世払い制度）
                   span.plan-content-label.__bg-green 特徴
-                  h4.plan-content-ttl-04.__txt-green 就職するまでお支払い不要
-                  p.plan-content-txt 勉強する意欲はあっても、初期費用の準備が難しい。そんな方への支援としてIT道場では「ISA制度」という、就職後に受講料をお支払いいただく出世払いの支払方法を準備しております。
-                  h4.plan-content-ttl-04 制度利用例
-                  .plan-content-ex 
-                    .plan-content-ex-noISA
-                      span.plan-content-label.__bg-black 入校時の授業料
-                      p.plan-content-ex-large 360,000円
-                        span.plan-content-ex-middle （税込）
-                      p.plan-content-ex-small ※一括払いまたは分割払いを選択いただけます。
+                  h4.plan-content-ttl-04.__txt-green 就職できなければ受講料無料
+                  p.plan-content-txt IT道場のカリキュラムでは就職までがゴールと考えています。<br>そのためカリキュラムには就職支援に関するプログラムも組み込んでいますが<br>それでも就職できなければ受講料は返金いたします。
+                  p.plan-content-txt ※就職保証制度の適用条件など詳細についてはお問い合わせフォームから当スクール担当者にお問い合わせください。
       section.cta
         .section-wrapper.cta-wrapper
           .cta-area
@@ -437,6 +433,33 @@ html(lang="ja")
           .section-ttl 
             span.section-ttl-large.section-ttl-large__dark-brown Works
             h2.section-ttl-middle.section-ttl-middle__white 主な就職先
+          .works-content 
+            .works-item 
+              img(src=path+"/img/page/works/logo1.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo2.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo3.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo4.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo5.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo6.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo7.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo8.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo9.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo10.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo11.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo12.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo13.png", alt="")
       section.faq#anc-05
         .section-wrapper 
           .section-ttl 

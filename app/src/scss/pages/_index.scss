@@ -889,9 +889,65 @@ table > tr > td {
     }
 }
 
+.strikethrough {
+    position: relative;
+    width: fit-content;
+    &::before {
+        position: absolute;
+        content: "";
+        border: solid 2px #d10606;
+        width: 100%;
+        top: 50%;
+    }
+}
+
+.topTriangle {
+    position: relative;
+    width: fit-content;
+    &::before {
+        position: absolute;
+        content: "▼";
+        font-size: 1.4rem;
+        top: -25%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        -webkit-transform: translate(-50%, 0%);
+    }
+}
+
 .works {
     padding: 150px 0 40px;
     background: #231808;
+
+    &-content {
+        width: 80%;
+        margin: 80px auto 40px;
+        padding: 56px 30px;
+        background: #fff;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        @include sp {
+            width: 95%;
+            margin: 48px auto 24px;
+            padding: 16px;
+        }
+    }
+
+    &-item {
+        width: 110px;
+
+        @include sp {
+            width: 70px;
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
 }
 
 .faq {
@@ -1007,4 +1063,8 @@ table > tr > td {
     &-16 {
         margin-top: 16px;
     }
+}
+
+.font18 {
+    font-size: 1.8rem;
 }
