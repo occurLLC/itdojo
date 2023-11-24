@@ -23,76 +23,168 @@ html(lang="ja")
     include ./include/_header
     main 
       .FV.pc-only
-        .FV-human
-          img(src=path+"/img/page/fv-human.png", alt="")
-        .FV-brown
-          img(src=path+"/img/page/fv-bg.png", alt="")
-          .FV-stones
-            img(src=path+"/img/page/cta_container.png", alt="")
-            .btn-line.FV-adj-btn
-              a(href="https://liff.line.me/2000447309-jgk2vKnZ/landing?follow=%40242mridi&lp=Dcgqh9&liff_id=2000447309-jgk2vKnZ") 
-                .btn-line-img
-                  img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
-                span.btn-line-txt LINEで無料相談
-          .FV-main 
-            img(src=path+"/img/page/fv-main.png", alt="開発エンジニアへの最短ルートならIT道場")
+        .FV-main
+          .FV-left 
+            .FV-left-txt
+              img(src=path+"/img/page/txt_fv.png", alt="未経験からエンジニアになるなら！実践型プログラミングスクールIT道場")
+            .FV-left-point
+              img(src=path+"/img/page/point_fv.png", alt="01 初期投資なしでOK! PC貸与制度あり※1 02 東証スタンダード上場企業が運営※2 03 出世払いOK 就職するまでお支払い不要※3")
+          .FV-right
+            .FV-right-img
+              img(src=path+"/img/page/img_fv.png", alt="")
+            .FV-right-txt
+              ol 
+                li 
+                  span 1
+                  | 開発環境を整えるための初期コストとして代表的なPCは貸与致します。<br>詳細についてはお問い合わせフォームから当スクール担当者にお問い合わせください。
+                li 
+                  span 2
+                  | 東証スタンダード上場の株式会社ＳＹＳホールディングスのグループ企業、株式会社エスワイシステムが運営。
+                li 
+                  span 3
+                  | 出世払い制度(ISA制度)とは、就職後に受講料をお支払いいただく出世払いの支払方法を指します。<br>また、就職保証制度もあり、就職できなければ受講料無料としています。
+              ul 
+                li 
+                  span
+                  | 就職保証制度の適用条件など詳細についてはお問い合わせフォームから当スクール担当者にお問い合わせください。
+        .FV-cta 
+          .FV-cta-left 
+            .FV-cta-left-box 
+              .FV-cta-left-img 
+                img(src=path+"/img/page/human_fv.png", alt="")
+              .FV-cta-left-box-ttl 初期費用0円！
+              .FV-cta-left-box-txt 入学時に資金がなくても大丈夫。<br>在職中の方は給付金制度の対象の可能性も！
+          .FV-cta-right
+            a(href="https://liff.line.me/2000447309-jgk2vKnZ/landing?follow=%40242mridi&lp=Dcgqh9&liff_id=2000447309-jgk2vKnZ") 
+                img(src=path+"/img/page/cta.png", alt="エンジニアへの最短ルート")
+      .FV-sp
+        .FV-sp-main
+          .FV-sp-txt
+            img(src=path+"/img/page/txt_fv_sp.png", alt="未経験からエンジニアになるなら！実践型プログラミングスクールIT道場")
+          .FV-sp-point
+            img(src=path+"/img/page/point_fv.png", alt="01 初期投資なしでOK! PC貸与制度あり※1 02 東証スタンダード上場企業が運営※2 03 出世払いOK 就職するまでお支払い不要※3")
+          .FV-sp-img
+            img(src=path+"/img/page/img_fv.png", alt="")
+          .FV-sp-caption
+            ol 
+              li 
+                span 1
+                | 開発環境を整えるための初期コストとして代表的なPCは貸与致します。<br>詳細についてはお問い合わせフォームから当スクール担当者にお問い合わせください。
+              li 
+                span 2
+                | 東証スタンダード上場の株式会社ＳＹＳホールディングスのグループ企業、株式会社エスワイシステムが運営。
+              li 
+                span 3
+                | 出世払い制度(ISA制度)とは、就職後に受講料をお支払いいただく出世払いの支払方法を指します。<br>また、就職保証制度もあり、就職できなければ受講料無料としています。
+            ul 
+              li 
+                span
+                | 就職保証制度の適用条件など詳細についてはお問い合わせフォームから当スクール担当者にお問い合わせください。
+        .FV-cta 
+          .FV-cta-left 
+            .FV-cta-left-box 
+              .FV-cta-left-img 
+                img(src=path+"/img/page/human_fv.png", alt="")
+              .FV-cta-left-box-ttl 初期費用0円！
+              .FV-cta-left-box-txt 入学時に資金がなくても大丈夫。<br>在職中の方は給付金制度の対象の可能性も！
+          .FV-cta-right
+            a(href="https://liff.line.me/2000447309-jgk2vKnZ/landing?follow=%40242mridi&lp=Dcgqh9&liff_id=2000447309-jgk2vKnZ") 
+                img(src=path+"/img/page/cta.png", alt="エンジニアへの最短ルート")
           
-      .FV-sp.sp-only
-        .FV-human-sp
-          img(src=path+"/img/page/fv-human_sp.png", alt="")
-        .FV-brown-sp
-          img(src=path+"/img/page/fv-bg_sp.png", alt="")
-          .FV-stones-sp
-            img(src=path+"/img/page/cta_container_sp.png", alt="")
-            .btn-line.FV-adj-btn
-              a(href="https://liff.line.me/2000447309-jgk2vKnZ/landing?follow=%40242mridi&lp=Dcgqh9&liff_id=2000447309-jgk2vKnZ") 
-                .btn-line-img
-                  img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
-                span.btn-line-txt LINEで無料相談
-          .FV-main-sp
-            img(src=path+"/img/page/fv-main.png", alt="開発エンジニアへの最短ルートならIT道場")
-      section.message 
-        .section-wrapper
-          .message-content
-            span.message-ttl-large Message
-            .message-content-wrapper
-              .message-content-txt
-                h2.ttl-middle 
-                  | 開発エンジニアを目指す全ての人に<br>
-                  span.ttl-middle-yellow チャンス
-                  | と
-                  span.ttl-middle-yellow 活躍の場
-                  | を提供したい
-                .message-content-img.sp-only
-                  img(src=path+"/img/page/message_img.png", alt="")
-                p 開発エンジニアになりたいけどチャレンジする資金がない。<br>今の仕事を辞めて、新しいことをはじめて大丈夫だろうか。<br>勉強しても仕事はあるのか。
-                p 新しいことへのチャレンジは不安がつきものです。
-                p 私たちは沢山の先輩達に育てられ、そして助け合ってきました。<br>その恩を忘れず、新たに同じ道を目指す方々へと還元したい。
-                p そしてそれは業界の発展とつながり、<br>地域社会へと還元されていくと信じています。
-              .message-content-img.pc-only
-                img(src=path+"/img/page/message_img.png", alt="")
-              
+        
       section.worries 
         .section-wrapper 
           .section-ttl 
-            span.section-ttl-large.section-ttl-large__light-brown Worries
-            h2.section-ttl-middle 
+            span.section-ttl-large.section-ttl-large__dark-brown Worries
+            h2.section-ttl-middle.section-ttl-middle__white 
               | こんな
-              span.ttl-middle-red お悩み・不安
+              span.ttl-middle-yellow お悩み・不安<br class="sp-only">
               | ありませんか？
           .worries-content 
             .worries-content-item 
               .worries-content-item-img 
                 img(src=path+"/img/page/worries_img_01.png", alt="")
-              p.worries-content-item-txt エンジニアとして<br>働くスキルが<br>身につくのか不安
+              p.worries-content-item-txt プログラミングで<br>食べていきたいが、<br>時間もあまり取れない中、<br>独学は大変そう。
             .worries-content-item 
               .worries-content-item-img 
                 img(src=path+"/img/page/worries_img_02.png", alt="")
-              p.worries-content-item-txt 学習を継続<br class="sp-only">できるか不安
+              p.worries-content-item-txt 本気でプログラミングを学び、<br>開発エンジニアとして<br>やっていきたいが、<br>プロレベルにはいきなりはなれない。
             .worries-content-item 
               .worries-content-item-img 
                 img(src=path+"/img/page/worries_img_03.png", alt="")
-              p.worries-content-item-txt 高額な受講料は<br class="sp-only">払えない
+              p.worries-content-item-txt 手に職を付けたい。<br>異業種に思い切って<br>転職して将来のビジョンを<br>見出したいが、今のままでは不安。
+      section.solution 
+        .solution-top 
+          .solution-top-ttl.pc-only
+            img(src=path+"/img/page/solusion_txt_1.png", alt="")
+            img(src=path+"/img/page/solusion_txt_2.png", alt="")
+          .solution-top-ttl.sp-only
+            img(src=path+"/img/page/solusion_txt_1.png", alt="")
+            img(src=path+"/img/page/solusion_txt_sp.png", alt="")
+        .solution-content 
+          .solution-content-item
+            h3.solution-content-item-ttl 未経験でも安心
+            .solution-content-item-img
+              img(src=path+"/img/page/solusion_1.png", alt="")
+            p.solution-content-item-txt ITに特化したスクールで<br>体系的に学べる
+          .solution-content-item
+            h3.solution-content-item-ttl 就職保証制度
+            .solution-content-item-img
+              img(src=path+"/img/page/solusion_2.png", alt="")
+            p.solution-content-item-txt その後の転職支援も充実、<br>万が一就職できない場合には<br>授業料は掛かりません！
+          .solution-content-item
+            h3.solution-content-item-ttl 初期費用0円
+            .solution-content-item-img
+              img(src=path+"/img/page/solusion_3.png", alt="")
+            p.solution-content-item-txt 初期費用0円（PC貸与制度あり）で<br>今、手元資金がなくても大丈夫！<br>就職後に授業料をお支払頂ける<br>ISA制度もご利用いただけます。
+      section.works
+        .works-wrapper 
+          h2.works-ttl 主な就職先一覧
+          .works-content 
+            .works-item 
+              img(src=path+"/img/page/works/logo1.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo2.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo3.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo4.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo5.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo6.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo7.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo8.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo9.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo10.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo11.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo12.png", alt="")
+            .works-item 
+              img(src=path+"/img/page/works/logo13.png", alt="")
+      section.cta
+        .section-wrapper.cta-wrapper
+          .cta-area 
+            .cta-content
+              .cta-content-top 
+                img(src=path+"/img/page/cta_heading.png", alt="エンジニアへの最短ルート 無料相談 簡単3ステップ")
+              .cta-content-items 
+                .cta-content-item
+                  img(src=path+"/img/page/cta_01.png", alt="STEP1 ボタンをタップ 画面下の予約ボタンをタップ")
+                .cta-content-item
+                  img(src=path+"/img/page/cta_02.png", alt="STEP2 認証許可＆友達追加 認証許可して登録しよう")
+                .cta-content-item
+                  img(src=path+"/img/page/cta_03.png", alt="STEP3 画面に従って予約 案内に従ってバナーをタップ！ 希望の日時で予約")
+            .btn-line.FV-adj-btn
+              a(href="https://liff.line.me/2000447309-jgk2vKnZ/landing?follow=%40242mridi&lp=Dcgqh9&liff_id=2000447309-jgk2vKnZ") 
+                .btn-line-img
+                  img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
+                span.btn-line-txt LINEで無料相談
       section.strengths#anc-01
         .section-wrapper 
           .section-ttl 
@@ -428,38 +520,6 @@ html(lang="ja")
                 .btn-line-img
                   img(src=path+"/img/page/cta-txt.png", alt="エンジニアへの最短ルート")
                 span.btn-line-txt LINEで無料相談
-      section.works
-        .section-wrapper 
-          .section-ttl 
-            span.section-ttl-large.section-ttl-large__dark-brown Works
-            h2.section-ttl-middle.section-ttl-middle__white 主な就職先
-          .works-content 
-            .works-item 
-              img(src=path+"/img/page/works/logo1.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo2.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo3.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo4.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo5.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo6.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo7.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo8.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo9.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo10.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo11.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo12.png", alt="")
-            .works-item 
-              img(src=path+"/img/page/works/logo13.png", alt="")
       section.faq#anc-05
         .section-wrapper 
           .section-ttl 

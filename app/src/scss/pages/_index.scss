@@ -1,91 +1,291 @@
+ul{
+    > li {
+        position: relative;
+        margin-left: 13px;
+        > span {
+            position: absolute;
+            font-size: .7rem;
+
+            @include sp {
+                font-size: .5rem;
+            }
+
+            &::before {
+                position: inherit;
+                content: "※";
+                left: -13px;
+            }
+        }
+    }
+}
+
+ol {
+    > li {
+        position: relative;
+        margin-left: 28px;
+        > span {
+            position: absolute;
+            left: -15px;
+            font-size: .7rem;
+
+            @include sp {
+                font-size: .5rem;
+            }
+
+            &::before {
+                position: inherit;
+                content: "※";
+                left: -13px;
+            }
+        }
+    }
+}
+
 .FV {
     display: block;
     position: relative;
-
-    &-sp {
-        padding-top: 60px;
-        display: block;
-        position: relative;
-    }
-
-    &-human {
-        > img {
-            width: 100%;
-        }
-    }
-    
-
-    &-brown {
-        width: 100%;
-        position: relative;
-        margin-top: -280px;
-        & > img {
-            width: 100%;
-        }
-
-        &-sp {
-            position: relative;
-            width: 100%;
-            margin-top: -50px;
-            & > img {
-                width: 100%;
-            }
-        }
-    }
-
-    &-stones {
-        position: absolute;
-        width: 50%;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        -webkit-transform: translate(-50%, 0%);
-
-        & > img {
-            margin: auto;
-        }
-
-        &-sp {
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%, 0%);
-            -webkit-transform: translate(-50%, 0%);
-            & > img {
-                width: 100%;
-            }
-        }
-    }
-
-    &-adj-btn {
-        bottom: 0%;
-    }
+    background-image: url('./img/page/bg_fv.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 70px;
 
     &-main {
-        width: 35%;
-        margin: auto;
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        display: flex;
+    }
 
-        & img {
-            margin: auto;
+    &-left,
+    &-right {
+        width: 50%;
+    }
+
+    &-left {
+        margin-top: 70px;
+        &-txt {
+            width: 75%;
+            margin: 0 auto;
         }
 
-        &-sp {
-            width: 90%;
-            margin: auto;
+        
+        &-point {
+            width: 75%;
+            margin: 20px auto 30px;
+
+            & > img {
+                margin: auto;
+            }
+        }
+    }
+
+    &-right {
+        &-txt {
+            color: $white;
+            font-size: .7rem;
+            margin: 50px 0;
+        }
+
+        &-img {
+            & > img {
+                width: 100%;
+            }
+        }
+    }
+
+    &-cta {
+        width: 100%;
+        background: #efefef;
+        padding: 50px 0 20px;
+        display: flex;
+
+        @include sp {
+            flex-direction: column;
+            padding: 50px 0 100px;
+        }
+
+        &-left {
+            width: 50%;
+
+            @include sp {
+                width: 95%;
+                margin: auto;
+            }
+
+            &-img {
+                position: absolute;
+                bottom: -20px;
+                left: -28%;
+
+                @include sp {
+                    left: -20%;
+                    bottom: 0;
+                }
+
+                & > img {
+                    width: 150px;
+
+                    @include sp {
+                        width: 100px;
+                    }
+                }
+            }
+
+            &-box {
+                width: 65%;
+                padding: 30px 0px 20px 30px;
+                margin-left: auto;
+                background: $white;
+                position: relative;
+
+                @include sp {
+                    width: 80%;
+                    padding: 30px 0 20px 30px;
+                }
+
+                &-ttl {
+                    width: 230px;
+                    text-align: center;
+                    position: absolute;
+                    top: -8px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    padding: 10px 30px;
+                    border-radius: 30px;
+                    font-size: 1.3rem;
+                    font-weight: 900;
+                    background: #231808;
+                    color: #fee301;
+
+                    @include sp {
+                        font-size: 1rem;
+                    }
+                }
+
+                &-txt {
+                    font-size: 1rem;
+                    font-weight: 900;
+                    text-align: center;
+
+                    @include sp {
+                        font-size: .7rem;
+                    }
+                }
+            }
+        }
+
+        &-right {
+            width: 50%;
+            position: relative;
+
+            @include sp {
+                width: 95%;
+                margin: auto;
+            }
+
+            & a {
+                width: 65%;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+
+                @include sp {
+                    width: 100%;
+                    top: 22px;
+                }
+
+                & img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    &-sp {
+        display: block;
+        background-image: url('./img/page/bg_fv.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: -10;
+            padding-top: 60px;
+
+        &-main {
+            position: relative;
+            height: 60vh;
+        }
+
+        &-img {
+            width: 100%;
             position: absolute;
-            top: -20%;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            z-index: -1;
+
+            & > img {
+                margin: auto;
+            }
+        }
+
+        &-txt,
+        &-point {
+            position: absolute;
+            width: 95%;
+            margin: auto;
             left: 50%;
             transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
         }
+
+        &-txt {
+            top: 15%;
+            & > img {
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        &-point {
+            top: 60%;
+            & > img {
+                margin: auto;
+                width: 90%;
+            }
+        }
+
+        &-caption {
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            -webkit-transform: translate(-50%, 0%);
+            -ms-transform: translate(-50%, 0%);
+            width: 95%;
+            margin: auto;
+            color: $white;
+            font-size: .8rem;
+
+            @include sp {
+                font-size: .5rem;
+            }
+        }
+
+        @include pc {
+            display: none;
+        }
+    }
+
+    &-adj-btn {
+        bottom: 0%;
     }
 }
 
@@ -253,7 +453,8 @@
 }
 
 .worries {
-    padding: 100px 0 40px;
+    padding: 130px 0 120px;
+    background: #231808;
 
     &-content {
         width: 80%;
@@ -262,25 +463,114 @@
 
         @include sp {
             width: 100%;
+            flex-direction: column;
         }
 
         &-item {
             width: 33.3%;
             text-align: center;
 
+            @include sp {
+                width: 95%;
+            }
+
             &-img {
                 width: 80%;
                 margin: auto;
+
+                @include sp {
+                    width: 60%;
+                }
             }
 
             &-txt {
                 margin: 30px 0;
                 font-weight: bold;
                 font-size: 1rem;
+                color: $white;
 
                 @include sp {
                     font-size: .8rem;
                 }
+            }
+        }
+    }
+}
+
+.solution {
+    &-top {
+        position: relative;
+        background: url('./img/page/solusion_arrow.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &-ttl {
+            width: 70%;
+            margin: auto;
+            position: relative;
+            top: -70px;
+
+            @include sp {
+                top: -70px;
+            }
+
+            > img {
+                &:first-child {
+                    width: 40%;
+                    margin: auto;
+
+                    @include sp {
+                        width: 90%;
+                    }
+                }
+                width: 80%;
+                margin: auto;
+
+                @include sp {
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+    &-content {
+        width: 70%;
+        margin: auto;
+        display: flex;
+
+        @include sp {
+            width: 100%;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &-item {
+            width: 33.3%;
+            text-align: center;
+
+            @include sp {
+                width: 95%;
+                margin: auto;
+            }
+
+            &-ttl {
+                width: fit-content;
+                padding: 0 10px;
+                margin: auto;
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: $white;
+                background: $black;
+            }
+
+            &-img {
+                width: 60%;
+                margin: 20px auto;
+            }
+
+            &-txt {
+                font-size: 1rem;
+                font-weight: 700;
             }
         }
     }
@@ -916,14 +1206,35 @@ table > tr > td {
 }
 
 .works {
-    padding: 150px 0 40px;
-    background: #231808;
+    padding: 80px 0 40px;
+    margin-bottom: 20px;
+
+    &-wrapper {
+        width: 80%;
+        padding: 50px 0 20px;
+        background: #efefef;
+        border-radius: 10px;
+        margin: auto;
+
+        @include sp {
+            width: 95%;
+        }
+    }
+
+    &-ttl {
+        color: $black;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: center;
+
+        @include sp {
+            font-size: 2rem;
+        }
+    }
 
     &-content {
-        width: 80%;
-        margin: 80px auto 40px;
-        padding: 56px 30px;
-        background: #fff;
+        margin: 20px auto 40px;
+        padding: 28px 30px 64px;
         border-radius: 5px;
         display: flex;
         flex-wrap: wrap;
@@ -932,7 +1243,7 @@ table > tr > td {
 
         @include sp {
             width: 95%;
-            margin: 48px auto 24px;
+            margin: 24px auto 24px;
             padding: 16px;
         }
     }
