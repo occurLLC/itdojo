@@ -217,7 +217,7 @@ ol {
 
         &-main {
             position: relative;
-            height: 60vh;
+            height: 75vh;
         }
 
         &-img {
@@ -255,7 +255,7 @@ ol {
         }
 
         &-point {
-            top: 60%;
+            top: 55%;
             & > img {
                 margin: auto;
                 width: 90%;
@@ -275,7 +275,7 @@ ol {
             font-size: .8rem;
 
             @include sp {
-                font-size: .5rem;
+                font-size: .6rem;
             }
         }
 

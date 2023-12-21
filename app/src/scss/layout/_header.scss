@@ -96,7 +96,9 @@
 			padding: 60px 30px 0 30px;
 		}
 		&.active {
-			display: block;
+			@include sp {
+				display: block;
+			}
 		}
 			&__item {
 				@include pc {
